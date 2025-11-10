@@ -69,8 +69,6 @@ const StyledNav = styled.nav`
       color: var(--green);
       width: 42px;
       height: 42px;
-      position: relative;
-      z-index: 1;
 
       .hex-container {
         position: absolute;
@@ -261,7 +259,13 @@ const Nav = ({ isHome }) => {
                 {isMounted && (
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                      {ResumeLink}
+                      <a
+                        href="https://drive.google.com/file/d/1QsvzIYs-kB_MjXnketH41RFh9Sv7zMAU/view"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="resume-button">
+                        Resume
+                      </a>
                     </div>
                   </CSSTransition>
                 )}

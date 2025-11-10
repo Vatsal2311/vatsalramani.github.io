@@ -1,26 +1,12 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  siteTitle: 'Vatsal Ramani\'s Portfolio',
+  email: 'vatsalramani.rv7@gmail.com',
+  phone: '+16509429706',
 
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
-    },
-    {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://www.linkedin.com/in/vatsal-ramani/',
     },
   ],
 
@@ -34,7 +20,7 @@ module.exports = {
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Projects',
       url: '/#projects',
     },
     {

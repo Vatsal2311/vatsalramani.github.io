@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig, email, phone } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -39,6 +39,11 @@ const StyledContactSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
+  .phone-link {
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 20px;
+  }
 `;
 
 const Contact = () => {
@@ -60,12 +65,19 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        I'm always excited to connect and explore new opportunities in Embedded Systems, Firmware
+        Development, and Hw/Sw co-design. Whether you’re hiring, want to collaborate on a project,
+        or just want to chat about low-level systems and real-time firmware — I’d love to hear from
+        you!
       </p>
+      <p>Feel free to contact me about any relevant job updates.</p>
 
       <a className="email-link" href={`mailto:${email}`}>
         Say Hello
+      </a>
+      <p></p>
+      <a className="phone-link" href={`tel:${phone}`}>
+        Call Me
       </a>
     </StyledContactSection>
   );
