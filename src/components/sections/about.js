@@ -172,7 +172,7 @@ const About = () => {
             aria-label="Vatsal Ramani on LinkedIn">
             <StaticImage
               className="img"
-              src="/Users/vatsal/Desktop/My portfolio/v4/src/images/Me.jpg"
+              src="../../images/me.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
